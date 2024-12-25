@@ -1,11 +1,11 @@
-# basic-repo-template
+# basic-ansible-template
 
-![GitHub branch status](https://img.shields.io/github/checks-status/mosher-labs/basic-repo-template/main)
-![GitHub Issues](https://img.shields.io/github/issues/mosher-labs/basic-repo-template)
-![GitHub last commit](https://img.shields.io/github/last-commit/mosher-labs/basic-repo-template)
-![GitHub repo size](https://img.shields.io/github/repo-size/mosher-labs/basic-repo-template)
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/mosher-labs/basic-repo-template)
-![GitHub License](https://img.shields.io/github/license/mosher-labs/basic-repo-template)
+![GitHub branch status](https://img.shields.io/github/checks-status/mosher-labs/basic-ansible-template/main)
+![GitHub Issues](https://img.shields.io/github/issues/mosher-labs/basic-ansible-template)
+![GitHub last commit](https://img.shields.io/github/last-commit/mosher-labs/basic-ansible-template)
+![GitHub repo size](https://img.shields.io/github/repo-size/mosher-labs/basic-ansible-template)
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/mosher-labs/basic-ansible-template)
+![GitHub License](https://img.shields.io/github/license/mosher-labs/basic-ansible-template)
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/mosher-labs)
 
 ## Introduction
@@ -80,7 +80,13 @@ Update the templated information:
 
 ### README.md
 
-- [ ] Replace `basic-repo-template` with your `<FORK_NAME>`
+- [ ] Replace `basic-ansible-template` with your `<FORK_NAME>`
+
+  ```bash
+  find . -not -path '*/\.git/*' -type f -exec \
+    sed -i '' -e 's/basic-ansible-template/<FORK_NAME>/g' '{}' \;
+  ```
+
 - [ ] Update the "Introduction" section
 - [ ] Update the "Usage" section
 - [ ] Update the "Contributing" section
