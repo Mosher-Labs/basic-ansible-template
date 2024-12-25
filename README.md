@@ -58,6 +58,7 @@ Create a ruleset for the default branch.
 - ✅ Require a pull request before merging
 - ✅ Dismiss stale pull request approvals when new commits are pushed
 - ✅ Require conversation resolution before merging
+- ✅ Request pull request review from Copilot
 - Allowed merge methods: "Squash"
 - ✅ Require status checks to pass
 - ✅ Require branches to be up to date before merging
@@ -66,15 +67,16 @@ Create a ruleset for the default branch.
 - ✅ Block force pushes
 - ✅ Require code scanning results
 
-Enable dependabot.
+Enable Dependabot.
 
 - In Github UI, navigate to the repositories Settings > Code security
 - Enable Dependabot security updates
-- Enabnle Grouped security updates
+- Enable Grouped security updates
 - Enable Dependabot version updates
 - Enable Dependabot on Actions runners
 - CodeQL analysis > Set up > Default
 - Enable Secret scanning
+- Enable Push protection
 
 Update the templated information:
 
