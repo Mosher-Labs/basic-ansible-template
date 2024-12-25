@@ -29,6 +29,14 @@ Clone, customize, and automate with ease! 🤝
 
 ## Usage
 
+### 📦 Dependencies
+
+```bash
+mise install pipx
+pipx install --incude-deps ansible
+pipx ensurepath
+```
+
 To use this repository template, simply fork the repo.
 
 ```bash
