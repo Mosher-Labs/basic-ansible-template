@@ -43,6 +43,8 @@ To use this repository template, simply fork the repo.
 gh repo fork --fork-name <FORK_NAME> --org <ORG_NAME>
 ```
 
+### ⚙️ Setup
+
 Update the repository settings:
 
 ```bash
@@ -87,7 +89,7 @@ Enable Dependabot.
 
 Update the templated information:
 
-### README.md
+#### README.md
 
 - [ ] Replace `basic-ansible-template` with your `<FORK_NAME>`
 
@@ -119,3 +121,7 @@ To update pre-commit hooks, this ideally should be ran before a pull request is 
 ```bash
 pre-commit autoupdate
 ```
+
+### 📋 TODO
+
+- [ ] Setup and configure molecule tests
