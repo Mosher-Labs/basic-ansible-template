@@ -125,13 +125,16 @@ pre-commit autoupdate           # Update hook versions
 **CRITICAL:** All code must adhere to linter rules from the start. Do NOT write
 code that needs fixing after running pre-commit hooks.
 
-**Ansible (ansible-lint):**
+**Markdown (markdownlint):**
 
-- Use FQCN for all modules
-- Avoid `ignore_errors: true`
-- Prefix variables with role name
-- Use `failed_when` instead of ignoring errors
-- Keep lines under 160 characters
+Configuration: `.markdownlint.yaml` (allows 2-space indent, 120 char lines)
+
+- Nested lists under unordered items: Use 2-space indentation
+- Nested lists under ordered items: Use 2-space indentation
+- Inline format for simple nested items: `**Item:** Detail 1, Detail 2`
+- Line length: 120 characters max (code/tables excluded)
+- Bare URLs: Allowed in reference sections
+- Bold for emphasis: Allowed in lists
 
 **YAML (yamllint):**
 
@@ -139,6 +142,14 @@ code that needs fixing after running pre-commit hooks.
 - Use 2-space indentation
 - No trailing whitespace
 - Proper quoting for strings containing special characters
+
+**Ansible (ansible-lint):**
+
+- Use FQCN for all modules (e.g., `ansible.builtin.command`)
+- Avoid `ignore_errors: true` - use `failed_when` instead
+- Prefix variables with role name (e.g., `rolename_variable`)
+- Split long lines across multiple lines using YAML block scalars
+- Always use meaningful task names
 
 ### When Working on This Repo
 
